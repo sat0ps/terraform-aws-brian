@@ -1,6 +1,6 @@
 # Brian AI Assistant — AWS Infrastructure (Terraform)
 
-![Terraform Validate](https://github.com/USERNAME/terraform-aws-brian/actions/workflows/validate.yml/badge.svg)
+![Terraform Validate](https://github.com/sat0ps/terraform-aws-brian/actions/workflows/validate.yml/badge.svg)
 
 Modular Terraform for **AWS** to run Brian v2 (offline LLMs via Ollama, Electron GUI, safety parser).
 
