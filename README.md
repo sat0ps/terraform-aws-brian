@@ -4,7 +4,7 @@
 
 # Brian AI Assistant - AWS Infrastructure
 
-[![Deploy to AWS](https://github.com/sat0ps/terraform-aws-brian/workflows/Deploy%20Brian%20AI%20to%20AWS/badge.svg)](https://github.com/sat0ps/terraform-aws-brian/actions)
+
 [![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)](https://terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
 [![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
