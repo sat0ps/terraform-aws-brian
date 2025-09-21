@@ -4,7 +4,7 @@
 
 # Brian AI Assistant - AWS Infrastructure
 
-
+[![Deploy to AWS](https://github.com/sat0ps/terraform-aws-brian/workflows/Deploy%20Brian%20AI%20to%20AWS/badge.svg)](https://github.com/sat0ps/terraform-aws-brian/actions)
 [![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)](https://terraform.io/)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
 [![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
@@ -32,46 +32,46 @@ Brian AI Assistant is a sophisticated AI system designed to interpret system-lev
 graph TB
     subgraph "AWS Cloud Infrastructure"
         subgraph "Networking Layer"
-            VPC[VPC with Public/Private Subnets<br/>10.0.0.0/16]
-            ALB[Application Load Balancer<br/>Public Access]
-            NAT[NAT Gateway<br/>Outbound Internet]
-            IGW[Internet Gateway<br/>Public Access]
+            VPC["VPC with Public/Private Subnets<br/>10.0.0.0/16"]
+            ALB["Application Load Balancer<br/>Public Access"]
+            NAT["NAT Gateway<br/>Outbound Internet"]
+            IGW["Internet Gateway<br/>Public Access"]
         end
         
         subgraph "Compute Layer - EKS"
-            EKS[Amazon EKS Cluster<br/>Kubernetes 1.28+]
-            SystemNodes[System Node Group<br/>t3.medium instances]
-            GPUNodes[GPU Node Group<br/>p3.2xlarge (optional)]
-            ALBController[AWS Load Balancer Controller<br/>Ingress Management]
+            EKS["Amazon EKS Cluster<br/>Kubernetes 1.28+"]
+            SystemNodes["System Node Group<br/>t3.medium instances"]
+            GPUNodes["GPU Node Group<br/>p3.2xlarge optional"]
+            ALBController["AWS Load Balancer Controller<br/>Ingress Management"]
         end
         
         subgraph "AI Services"
-            LLaMA[LLaMA 3 Service<br/>Natural Language Processing]
-            Mistral[Mistral Service<br/>Command Interpretation]
-            Ollama[Ollama Runtime<br/>Local AI Inference]
-            Safety[Safety Parser<br/>Malicious Code Detection]
+            LLaMA["LLaMA 3 Service<br/>Natural Language Processing"]
+            Mistral["Mistral Service<br/>Command Interpretation"]
+            Ollama["Ollama Runtime<br/>Local AI Inference"]
+            Safety["Safety Parser<br/>Malicious Code Detection"]
         end
         
         subgraph "Storage & Registry"
-            ECR[Amazon ECR<br/>Container Registry]
-            EBS[EBS Volumes<br/>Persistent Storage]
-            S3[S3 Buckets<br/>Model Artifacts & Logs]
-            SecretsManager[AWS Secrets Manager<br/>API Keys & Configs]
+            ECR["Amazon ECR<br/>Container Registry"]
+            EBS["EBS Volumes<br/>Persistent Storage"]
+            S3["S3 Buckets<br/>Model Artifacts & Logs"]
+            SecretsManager["AWS Secrets Manager<br/>API Keys & Configs"]
         end
         
         subgraph "Security & Monitoring"
-            IAM[IAM Roles & Policies<br/>Fine-grained Access]
-            SecretsCSI[Secrets Store CSI Driver<br/>Pod Secret Injection]
-            CloudWatch[CloudWatch<br/>Metrics & Logs]
-            GuardDuty[GuardDuty<br/>Threat Detection]
+            IAM["IAM Roles & Policies<br/>Fine-grained Access"]
+            SecretsCSI["Secrets Store CSI Driver<br/>Pod Secret Injection"]
+            CloudWatch["CloudWatch<br/>Metrics & Logs"]
+            GuardDuty["GuardDuty<br/>Threat Detection"]
         end
     end
     
     subgraph "External"
-        User[👤 User]
-        GUI[Electron GUI]
-        Linux[Linux System]
-        GitHub[GitHub Actions<br/>CI/CD Pipeline]
+        User["👤 User"]
+        GUI["Electron GUI"]
+        Linux["Linux System"]
+        GitHub["GitHub Actions<br/>CI/CD Pipeline"]
     end
     
     User --> GUI
@@ -828,3 +828,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Built with ❤️ for the AWS and AI community
 
 *Ready to deploy your Brian AI Assistant on AWS? Get started with `terraform apply`!*
+
